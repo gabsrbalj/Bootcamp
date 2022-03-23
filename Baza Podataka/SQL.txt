@@ -1,0 +1,82 @@
+INSERT INTO subscriptions(SubscriptionID, FirstPersonsName, LastPersonsName)
+VALUES ('1','Marina','Novotny');
+
+INSERT INTO subscriptions(SubscriptionID, FirstPersonsName, LastPersonsName, BookID)
+VALUES ('2','Lorena','Gavrich','1');
+
+INSERT INTO subscriptions(SubscriptionID, FirstPersonsName, LastPersonsName, BookID)
+VALUES ('3','Lana','Crnac','3');
+
+
+INSERT INTO subdetails(BookID, AuthorsName, BookName )
+VALUES ('1','Fjodor Dostojevski', 'Idiot');
+
+INSERT INTO subdetails(BookID, AuthorsName, BookName)
+VALUES ('2','Charles Bukowski', 'Priče');
+
+INSERT INTO subdetails(BookID, AuthorsName, BookName)
+VALUES ('3','Braća Grimm', 'Bajke Svijeta');
+
+SELECT * FROM subdetails;
+
+UPDATE subdetails
+SET BookName = 'Rat i mir'
+WHERE BookName = 'Idiot'
+
+SELECT BookName FROM subdetails;
+
+
+SELECT BookID FROM subdetails
+ORDER BY BookID DESC;
+
+ALTER TABLE subdetails
+ADD dateofsub DATE;
+
+SELECT * FROM subscriptions;
+
+ALTER TABLE subdetails
+DROP COLUMN dateofsub;
+
+SELECT * FROM subscriptions;
+
+SELECT subscriptions.SubscriptionID, subdetails.BookID
+FROM subscriptions
+INNER JOIN subdetails
+ON subdetails.BookID = subscriptions.BookID;
+
+INSERT INTO subdetails(BookID, AuthorsName, BookName)
+VALUES ('4','Mato Lovrak', 'Vlak u snijegu');
+
+INSERT INTO subdetails(BookID, AuthorsName, BookName)
+VALUES ('5','Jane Austen', 'Ponos i predrasude');
+
+INSERT INTO subdetails(BookID, AuthorsName, BookName)
+VALUES ('6','Leo Tolstoy', 'Rat i mir');
+
+INSERT INTO subdetails(BookID, AuthorsName, BookName)
+VALUES ('7','Carlos Riuz', 'Sjena vjetra');
+
+INSERT INTO subscriptions(SubscriptionID, FirstPersonsName, LastPersonsName, BookID)
+VALUES ('4','Vanesa','Lovrić','5');
+
+SELECT * FROM subscriptions;
+
+SELECT * FROM subdetails;
+
+SELECT AuthorsName, BookName, BookID
+FROM subdetails
+ORDER BY BookID
+OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY
+
+SELECT COUNT(BookID), BookName
+FROM subdetails
+GROUP BY BookName
+HAVING COUNT(BookID) > 0
+ORDER BY COUNT(BookID) DESC;
+
+SELECT AuthorsName, BookID
+FROM subdetails
+WHERE BookID = '5' AND BookName = 'Ponos i predrasude';
+
+SELECT * FROM subdetails
+WHERE AuthorsName = 'Jane Austen' OR AuthorsName = 'Charles Bukowski';

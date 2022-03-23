@@ -1,0 +1,13 @@
+CREATE TABLE subdetails(
+	BookID INT NOT NULL PRIMARY KEY,
+	AuthorsName VARCHAR(30) NOT NULL,
+	BookName VARCHAR(30) NOT NULL,
+);
+
+CREATE TABLE subscriptions(
+	SubscriptionID INT PRIMARY KEY NOT NULL,
+	FirstPersonsName VARCHAR(30) NOT NULL,
+	LastPersonsName VARCHAR(30) NOT NULL,
+	BookID INT NOT NULL,
+	FOREIGN KEY (BookID) REFERENCES subdetails(BookID)
+);
