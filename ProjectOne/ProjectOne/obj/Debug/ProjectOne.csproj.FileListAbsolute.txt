@@ -1,0 +1,14 @@
+C:\Users\Gabi\Desktop\Bootcamp Lessons\ProjectOne\ProjectOne\bin\Debug\ProjectOne.exe.config
+C:\Users\Gabi\Desktop\Bootcamp Lessons\ProjectOne\ProjectOne\bin\Debug\ProjectOne.exe
+C:\Users\Gabi\Desktop\Bootcamp Lessons\ProjectOne\ProjectOne\bin\Debug\ProjectOne.pdb
+C:\Users\Gabi\Desktop\Bootcamp Lessons\ProjectOne\ProjectOne\obj\Debug\ProjectOne.csprojAssemblyReference.cache
+C:\Users\Gabi\Desktop\Bootcamp Lessons\ProjectOne\ProjectOne\obj\Debug\ProjectOne.csproj.CoreCompileInputs.cache
+C:\Users\Gabi\Desktop\Bootcamp Lessons\ProjectOne\ProjectOne\obj\Debug\ProjectOne.exe
+C:\Users\Gabi\Desktop\Bootcamp Lessons\ProjectOne\ProjectOne\obj\Debug\ProjectOne.pdb
+C:\Users\Gabi\Desktop\ProjectOne\ProjectOne\bin\Debug\ProjectOne.exe.config
+C:\Users\Gabi\Desktop\ProjectOne\ProjectOne\bin\Debug\ProjectOne.exe
+C:\Users\Gabi\Desktop\ProjectOne\ProjectOne\bin\Debug\ProjectOne.pdb
+C:\Users\Gabi\Desktop\ProjectOne\ProjectOne\obj\Debug\ProjectOne.csprojAssemblyReference.cache
+C:\Users\Gabi\Desktop\ProjectOne\ProjectOne\obj\Debug\ProjectOne.csproj.CoreCompileInputs.cache
+C:\Users\Gabi\Desktop\ProjectOne\ProjectOne\obj\Debug\ProjectOne.exe
+C:\Users\Gabi\Desktop\ProjectOne\ProjectOne\obj\Debug\ProjectOne.pdb
