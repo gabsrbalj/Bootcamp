@@ -4,6 +4,7 @@
 	<title>Beauty Salon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="indexstyle.css">
+	<script src="indexjs.js"></script>
 </head>
 <header>
 </header>
@@ -38,7 +39,7 @@
 	<form action="https://mirja-kozmetika.hr/">
 		<input type="submit" value="ABOUT US" class="input"/>
 	</form>
-	
+<article>
 	<section>
 		<div class="pricelist">
 		
@@ -82,5 +83,59 @@
 			</table>
 		</div>
 	</section>
+
+	<section>
+		<div class="jscontainer">
+			<button id="test" onclick="myfunction()">Number of available apointments</button>
+		</div>
+	</section>
+
+	
+	
+</article>
+
+<article class="articleSecond">
+	<section>
+		<div class="priceForm">
+			<form  class="formStyle" onsumbit="formSumbmition()">
+				<label for="productType">Product Type:</label><br>
+				<input type="text" id="productType" name="productType" placeholder="Write product type"><br>
+				<label for="layersPerApplication">Layers Per Application:</label><br>
+				<input type="number" id="layersPerApplication" name="layersPerApplication" placeholder="Write number of layers"><br>
+				<label for="appliesPerDay">Applies Per Day:</label><br>
+				<input type="number" id="applyPerDay" name="applyPerDay" placeholder="Write number of applies"><br>
+				<label for="productVolume">Product Volume:</label><br>
+				<input type="number" id="productVolume" name="productVolume" placeholder="Write product volume"><br>
+				<input type="submit" value="submit">
+			</form>
+		</div>
+	</section>
+
+	<div>
+		<p id="foundationPrice"></p>
+	</div>
+
+	<div>
+		<p id="demo" class="demo"></p>
+	</div>
+
+	<p id="makeup"></p>
+
+	<div>
+		<table>
+			<tr>
+				<td>Name</td>
+				<td>Last Name</td>
+				<td>Specialization</td>
+			</tr>
+			<tr>
+				<td><p id="firstEmployeeName"></p></td>
+				<td><p id="firstEmployeeLastName"></p></td>
+				<td><p id="firstEmployeeSpecialization"></p></td>
+			</tr>
+		</table>
+	</div>
+</article>
+	
 </body>
 </html>

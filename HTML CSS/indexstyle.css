@@ -84,3 +84,29 @@ table, th, td{
 	left: 130px;
 }
 
+#test{
+	position:absolute;
+	top: 650px;
+	left: 320px;
+	background-color: white;
+	border-color: black;
+}
+
+#test:hover{
+	background-color: antiquewhite;
+	box-shadow: 0 10px 13px 0 rgba(0,0,0,0.24), 0 12px 40px 0 rgba(0,0,0,0.19);
+}
+
+#pricing{
+	position: absolute;
+	top: 1100px;
+	left: 300px;
+}
+
+.articleSecond{
+	position: absolute;
+	top: 1200px;
+	left: 300px;
+}
+
+
